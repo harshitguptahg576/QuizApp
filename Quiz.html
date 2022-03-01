@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <title>Quiz App | H-Coder</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="quizStart">
+            <div class="title">
+                <h3 class="title-text"> My Quiz Problem</h3>
+            </div>
+            <div class="register">
+                <div class="quizIcon">
+                    <img src="Icon.png" alt="">
+                </div>
+                <div class="reg-text">Register Name</div>
+                <div class="reg-name">
+                    <input class="username" type="text" name="name" id="reg" value="Enter Name">
+                </div>
+                <div class="start" id="start-btn">
+                    <h3 class="start-text">Start Now</h3>
+                </div>
+            </div>
+        </div>
+        <div class="Quiz">
+            <div class="title">
+                <h3 class="title-text"> Quiz in Javascript</h3>
+            </div>
+            <hr class="divider">
+            <div class="quiz-desc">
+                <div class="timer"><p><span id="min">00</span> : <span id="sec">00</span></p></div>
+                <div class="quiz-name">Hello! <span class="quiz-user">(Username)</span></div>
+                <div class="quiz-no">Question <span id="QuesStart">1</span> of <span id="QuesLast">4</span></div>
+            </div>
+
+            <div class="quiz-ques">
+                <!-- <div class="ques">Which type of javascript is ___</div>
+                <div class="quiz-ans">
+                    <div class="">
+                        <span class="opt">A.</span>
+                        <input type="radio" name="question1" value="Object-Based">
+                        Object-Based
+                    </div>
+                    <div>
+                        <span class="opt">B.</span>
+                        <input type="radio" name="question1" value="Object-Based">
+                        Object-Based
+                    </div>
+                    <div>
+                        <span class="opt">C.</span>
+                        <input type="radio" name="question1" value="Object-Based">
+                        Object-Based
+                    </div>
+                    <div>
+                        <span class="opt">D.</span>
+                        <input type="radio" name="question1" value="Object-Based">
+                        Object-Based
+                    </div>
+                </div> -->
+                <!-- <div class="subnext">
+                    <button class="submit">Submit</button>
+                    <button class="next">Next</button>
+                </div> -->
+            </div>
+            <hr class="divider">
+            <div class="result">
+            </div>
+        </div>
+        <div class="quizResult">
+            <div class="title">
+                <h3 class="title-text"> Result</h3>
+            </div>
+            <div class="register">
+                <div class="quizIcon">
+                    <img src="Icon.png" alt="">
+                </div>
+                <div class="reg-text">Test Completed</div>
+                <div class="result-desc">
+                <div>You got <span class="score">2</span> of <span id="ResultLast">4 </span> questions correct</div>
+                <div>Name: <span class="quiz-user">Harshit</span></div>
+                <div>Score: <span class="score">2</span></div>
+                <div class="timetaken">Time Taken: <span class="time">00 : 00</span></div>
+                </div>
+                <div class="start" id="start-again">
+                    <h3 class="start-text">Click to Attempt Again</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="Quiz.js"></script>
+</body>
+</html>
